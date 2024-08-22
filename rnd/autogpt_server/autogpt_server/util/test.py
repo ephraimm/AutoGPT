@@ -121,7 +121,8 @@ def execute_block_test(block: Block):
                     is_matching = expected_data(data)
                 else:
                     is_matching = False
-
+                print(">>>>>>test output data type:", type(data))    
+                print(">>>>>>test output data:", data)
                 mark = "✅" if is_matching else "❌"
                 log(f"{prefix} {mark} comparing `{data}` vs `{expected_data}`")
                 if not is_matching:

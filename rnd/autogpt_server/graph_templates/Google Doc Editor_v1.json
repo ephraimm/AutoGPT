@@ -1,0 +1,66 @@
+{
+    "id": "d9f14065-8b7f-4bd3-8c6b-fc847679abeb",
+    "version": 6,
+    "is_active": true,
+    "is_template": false,
+    "name": "Doc Editor",
+    "description": "Agent Description",
+    "nodes": [
+        {
+            "id": "b3bc087d-797f-46b1-984a-790185e401eb",
+            "block_id": "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8",
+            "input_default": {
+                "model": "gpt-4o-mini"
+            },
+            "metadata": {
+                "position": {
+                    "x": 1300.7182070034255,
+                    "y": 80.38102111747516
+                }
+            }
+        },
+        {
+            "id": "4d812492-bc97-4c0a-904b-58917c12b2db",
+            "block_id": "f8e7d6c5-b4a3-2c1d-0e9f-8g7h6i5j4k3l",
+            "input_default": {},
+            "metadata": {
+                "position": {
+                    "x": 721.4308659974361,
+                    "y": 44.41906722729772
+                }
+            }
+        },
+        {
+            "id": "aa85c47f-0ffe-4a46-ad81-6621a177906b",
+            "block_id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+            "input_default": {
+                "document_id": "1ljbv2jgs6lBB0_QQV9KLloaM4BltDeWVXBiHrf3e51Y"
+            },
+            "metadata": {
+                "position": {
+                    "x": 107.71530322782424,
+                    "y": 206.39353660455183
+                }
+            }
+        }
+    ],
+    "links": [
+        {
+            "id": "2d46330f-c07b-4b20-b84c-b32f5d5ba962",
+            "source_id": "aa85c47f-0ffe-4a46-ad81-6621a177906b",
+            "sink_id": "4d812492-bc97-4c0a-904b-58917c12b2db",
+            "source_name": "content",
+            "sink_name": "items",
+            "is_static": false
+        },
+        {
+            "id": "90b9d520-fa14-4541-94fd-609d894b8a50",
+            "source_id": "4d812492-bc97-4c0a-904b-58917c12b2db",
+            "sink_id": "b3bc087d-797f-46b1-984a-790185e401eb",
+            "source_name": "item",
+            "sink_name": "text",
+            "is_static": false
+        }
+    ],
+    "subgraphs": {}
+}
